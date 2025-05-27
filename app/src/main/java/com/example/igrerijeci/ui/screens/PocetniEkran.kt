@@ -99,32 +99,6 @@ fun PocetniEkran(navController: NavController, modifier: Modifier = Modifier) {
                 )
             }
         }
-
-        // Treca igra
-        Card(
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(vertical = 8.dp)
-                .height(120.dp)
-                .clickable { /* TODO: navigacija */ },
-            colors = CardDefaults.cardColors(containerColor = Color(0xFFB33951)),
-            shape = RoundedCornerShape(16.dp),
-            elevation = CardDefaults.cardElevation(4.dp)
-        ) {
-            Box(
-                modifier = Modifier.fillMaxSize(),
-                contentAlignment = Alignment.Center
-            ) {
-                Text(
-                    text = "TRECA IGRA",
-                    color = Color.White,
-                    fontSize = 25.sp,
-                    fontWeight = FontWeight.Bold,
-                    textAlign = TextAlign.Center,
-                    modifier = Modifier.fillMaxWidth()
-                )
-            }
-        }
     }
 }
 
