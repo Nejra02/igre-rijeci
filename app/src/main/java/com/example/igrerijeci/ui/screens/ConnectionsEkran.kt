@@ -26,7 +26,6 @@ import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavHostController
 import com.example.igrerijeci.viewmodel.ConnectionsViewModel
-import com.example.igrerijeci.model.WordItem
 import com.example.igrerijeci.navigation.Screens
 import com.example.igrerijeci.ui.components.ConnectionsDodajGrupuPopup
 import com.example.igrerijeci.ui.components.ConnectionsRezultatPopup
@@ -34,12 +33,10 @@ import com.example.igrerijeci.ui.components.ConnectionsRezultatPopup
 @Composable
 fun ConnectionsEkran(
     viewModel: ConnectionsViewModel = viewModel(),
-    onPravilaClick: () -> Unit = {},
     navController: NavHostController
 ) {
     val rijeci = viewModel.words
     val preostaloPokusaja = 4 - viewModel.brojPokusaja
-    var showAddPopup by remember { mutableStateOf(false) }
     val showRezultat = viewModel.igraGotova
     var showAddGroupPopup by remember { mutableStateOf(false) }
 
@@ -137,7 +134,7 @@ fun ConnectionsEkran(
             horizontalArrangement = Arrangement.SpaceBetween,
             verticalAlignment = Alignment.CenterVertically
         ) {
-            IconButton(onClick = { /* Igrom navigacija */ }) {
+            IconButton(onClick = {  }) {
                 Icon(
                     imageVector = Icons.Default.SportsEsports,
                     contentDescription = "Igrica",

@@ -38,5 +38,35 @@ val sveGrupe: List<List<WordItem>> = listOf(
         WordItem("Bus", 5),
         WordItem("Biciklo", 5),
         WordItem("Voz", 5)
+    ),
+    listOf(
+        WordItem("Hljeb", 6),
+        WordItem("Sir", 6),
+        WordItem("Med", 6),
+        WordItem("Jaja", 6)
+    ),
+    listOf(
+        WordItem("Ormar", 7),
+        WordItem("Stol", 7),
+        WordItem("Krevet", 7),
+        WordItem("Lampa", 7)
+    ),
+    listOf(
+        WordItem("Sunce", 8),
+        WordItem("Kiša", 8),
+        WordItem("Oblak", 8),
+        WordItem("Snijeg", 8)
+    ),
+    listOf(
+        WordItem("Horor", 9),
+        WordItem("Drama", 9),
+        WordItem("Akcija", 9),
+        WordItem("Triler", 9)
+    ),
+    listOf(
+        WordItem("Laptop", 10),
+        WordItem("Mobitel", 10),
+        WordItem("Tablet", 10),
+        WordItem("Monitor", 10)
     )
 )

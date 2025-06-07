@@ -7,7 +7,6 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import com.example.igrerijeci.data.wordleRijeci
-import android.widget.Toast
 
 
 
@@ -61,7 +60,7 @@ class WordleViewModel : ViewModel() {
         val rezultat = MutableList(5) { SlovoState.Netacno }
         val targetUsed = BooleanArray(5) { false }
 
-        // 1. Prvi prolaz – tačna mjesta
+        // tacna mjesta
         for (i in 0..4) {
             if (guessChars[i] == target[i]) {
                 rezultat[i] = SlovoState.Tacno
@@ -69,7 +68,7 @@ class WordleViewModel : ViewModel() {
             }
         }
 
-        // 2. Drugi prolaz – pogrešna mjesta
+        // netacna mjesta
         for (i in 0..4) {
             if (rezultat[i] == SlovoState.Tacno) continue
             for (j in 0..4) {
@@ -81,7 +80,7 @@ class WordleViewModel : ViewModel() {
             }
         }
 
-        // Postavi boje na tablu
+        // postavljanje boja
         board = board.toMutableList().also { nova ->
             val novaRed = board[red].mapIndexed { i, polje ->
                 polje.copy(state = rezultat[i])

@@ -16,6 +16,7 @@ val wordleRijeci = mutableStateListOf(
     "ADMIN", "KADAR", "ADMIN", "PONOS", "OKVIR", "DLAKA", "DASKA", "DODIR",
     "TIGAR", "SIDRO", "PRAVO", "PONOR", "ČOPOR", "KRIVO", "NARAV", "ROLKA",
     "SLINA", "OKLOP", "STROP", "TORBA", "UKRAS", "RIZIK", "OBRAZ", "OBLAK",
-    "ISPIT", "IZLOG", "IZROD", "KRIZA"
+    "ISPIT", "IZLOG", "IZROD", "KRIZA", "KLUPA", "AROMA", "GOLUB", "KREMA",
+    "PTICA"
 )
 

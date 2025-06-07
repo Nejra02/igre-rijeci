@@ -41,14 +41,12 @@ fun PocetniEkran(navController: NavController, modifier: Modifier = Modifier) {
         verticalArrangement = Arrangement.Center
 
     ) {
-        // LOGO
         Image(
             painter = painterResource(id = R.drawable.logo),
             contentDescription = "logo",
             contentScale = ContentScale.Fit
         )
 
-        // Wordle
         Card(
             modifier = Modifier
                 .fillMaxWidth()
@@ -74,7 +72,6 @@ fun PocetniEkran(navController: NavController, modifier: Modifier = Modifier) {
             }
         }
 
-        // Connections
         Card(
             modifier = Modifier
                 .fillMaxWidth()

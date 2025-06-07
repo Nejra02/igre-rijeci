@@ -1,4 +1,3 @@
-// model/WordItem.kt
 package com.example.igrerijeci.model
 
 data class WordItem(

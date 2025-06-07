@@ -116,11 +116,11 @@ fun ConnectionsPravilaEkran(navController: NavHostController) {
                     horizontalArrangement = Arrangement.spacedBy(8.dp),
                     verticalAlignment = Alignment.CenterVertically
                 ) {
-                    listOf("Jabuka", "Banana", "Kruška", "Trešnja").forEach { word ->
+                    listOf("Jabuka", "Rim", "Plava", "Koala").forEach { word ->
                         Box(
                             modifier = Modifier
                                 .weight(1f)
-                                .border(1.dp, Color.Black, shape = RoundedCornerShape(6.dp)) // ← dodano ovdje
+                                .border(1.dp, Color.Black, shape = RoundedCornerShape(6.dp))
                                 .background(Color(0xFFF1F7ED), shape = RoundedCornerShape(6.dp))
                                 .padding(vertical = 8.dp),
                             contentAlignment = Alignment.Center
